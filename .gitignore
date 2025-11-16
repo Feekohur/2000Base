@@ -1,0 +1,76 @@
+############################
+# Angular 20
+############################
+
+# Angular build output
+2000BaseAngular/dist/
+2000BaseAngular/out-tsc/
+2000BaseAngular/tmp/
+
+# Node
+2000BaseAngular/node_modules/
+2000BaseAngular/npm-debug.log
+2000BaseAngular/yarn-error.log
+2000BaseAngular/pnpm-debug.log
+
+# Environment files
+2000BaseAngular/src/environments/*.prod.ts
+2000BaseAngular/src/environments/environment.local.ts
+
+# Angular cache
+2000BaseAngular/.angular/cache/
+2000BaseAngular/.angular/
+
+# IDE files
+2000BaseAngular/*.iml
+2000BaseAngular/*.log
+2000BaseAngular/.idea/
+2000BaseAngular/.vscode/
+2000BaseAngular/*.suo
+2000BaseAngular/*.ntvs*
+2000BaseAngular/*.njsproj
+2000BaseAngular/*.sln*
+2000BaseAngular/*.sw?
+
+############################
+# .NET 8 Web API
+############################
+
+# Build outputs
+2000BaseNET/bin/
+2000BaseNET/obj/
+2000BaseNET/.vs
+
+# NuGet packages
+2000BaseNET/*.nupkg
+2000BaseNET/*.snupkg
+2000BaseNET/packages/
+2000BaseNET/*.nuget.props
+2000BaseNET/*.nuget.targets
+
+# User-specific files
+2000BaseNET/*.user
+2000BaseNET/*.userosscache
+2000BaseNET/*.suo
+2000BaseNET/*.rsuser
+2000BaseNET/*.pdb
+
+# Logs
+2000BaseNET/*.log
+
+# Publish outputs
+2000BaseNET//publish/
+2000BaseNET//wwwroot/lib/
+
+# ASP.NET Scaffolding
+2000BaseNET/ScaffoldingReadMe.txt
+
+############################
+# Git
+############################
+
+# Git directory
+.git/
+
+# Git LFS
+*.lfs

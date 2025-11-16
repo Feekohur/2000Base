@@ -1,0 +1,6 @@
+@_2000BaseNET_HostAddress = http://localhost:5049
+
+GET {{_2000BaseNET_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
