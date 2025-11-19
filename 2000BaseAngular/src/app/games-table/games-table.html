@@ -1,0 +1,30 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Event</th>
+            <th>Site</th>
+            <th>Date</th>
+            <th>Round</th>
+            <th>White</th>
+            <th>Black</th>
+            <th>Result</th>
+            <th>Moves</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(game of games; track game.id){
+            <tr>
+                <td>{{game.id}}</td>
+                <td>{{game.event}}</td>
+                <td>{{game.site}}</td>
+                <td>{{game.date}}</td>
+                <td>{{game.round}}</td>
+                <td>{{game.white}}</td>
+                <td>{{game.black}}</td>
+                <td>{{game.result}}</td>
+                <td>{{game.moves}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
