@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { GameService } from '../game-service';
 
 @Component({
@@ -7,7 +7,7 @@ import { GameService } from '../game-service';
   templateUrl: './games-table.html',
   styleUrl: './games-table.css',
 })
-export class GamesTable {
+export class GamesTable implements OnInit {
   gameService = inject(GameService);
   games:Game[] = [];
 
