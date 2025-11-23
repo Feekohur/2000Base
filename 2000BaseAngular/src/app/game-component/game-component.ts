@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+declare let Chessboard2: any;
+import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { GameService } from '../game-service';
-import * as Chessboard from '@chrisoakman/chessboardjs/'
 
 @Component({
   selector: 'app-game-component',
@@ -9,9 +9,17 @@ import * as Chessboard from '@chrisoakman/chessboardjs/'
   styleUrl: './game-component.css',
 })
 export class GameComponent {
+
+  @ViewChild('board1') input:ElementRef | undefined;
+  board:any; 
+
+  ngAfterViewInit() {
+    console.log(this.input);
+    this.board = Chessboard2(this.input?.nativeElement.id, 'start');
+  }
+  
   ngOnInit(): void {
     this.gameService.getGame(1).subscribe(game => this.game = game);
-    Chessboard('board', 'start');
   }
   gameService = inject(GameService);
   game:Game | undefined;
